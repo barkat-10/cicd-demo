@@ -15,3 +15,9 @@ jobs:
 
       - name: Build with Maven
         run: ./mvnw clean package
+
+      - name: Upload with Jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: spring-boot-Jar
+          path: target/*.Jar
