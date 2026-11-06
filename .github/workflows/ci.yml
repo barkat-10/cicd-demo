@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: spring-boot-Jar
-          path: target/*.Jar
+          path: target/*.jar
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
